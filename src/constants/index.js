@@ -138,8 +138,8 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2023 - Present",
     points: [
-      "Analysed ,developed and debugged Network Functions for Oracle 5G Communications.",
-      "Deployed 5G Network Functions on Kubernetes Cluster",
+      "Developed and debugged Network Functions for Oracle 5G Communications.",
+      "Deployed 5G Network Functions on Kubernetes Cluster and wrote shell scripts to automate them",
       " Simulated 50+ scenarios and 130+ Feature validation cases using Python for 5G Core component and solely responsible for   automation scenarios of NSSF",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
@@ -151,9 +151,9 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "May 2022 - Jul 2022",
     points: [
-      "Collaborated with cross-functional teams to implement Angular features, resulting in a 25% improvement in UI and reduced the bug count by 50%.",
+      "Collaborated with cross-functional teams to implement React features, resulting in a 25% improvement in UI and reduced the bug count by 50%.",
       "Part of Functionality and bug-solving team and solved around 50bugs in duration of 2 months",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Implementing responsive design and ensuring cross-browser compatibility along with seamless UI experience",
     ],
   },
   {
