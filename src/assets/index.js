@@ -7,13 +7,13 @@ import github from "./github.png";
 import computer from "./computer.jpg";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import project from "./project.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import kubernetes from "./tech/kubernetes.png";
 import git from "./tech/git.png";
 import sql from "./tech/sql.png";
-import graphql from "./tech/graphql.png";
 import clerk from "./tech/clerk.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -26,6 +26,9 @@ import alan from "./tech/alan.png";
 import aws from "./tech/aws.png";
 import jenkins from "./tech/jenkins.png";
 import nextjs from "./tech/nextjs.svg";
+import prisma from "./tech/prisma.svg";
+import socketio from "./tech/socketio.svg";
+import graphql from "./tech/graphql.svg";
 
 import internshala from "./company/internshala.png";
 import shopify from "./company/shopify.png";
@@ -37,6 +40,9 @@ import chatulita from "./chatulita.png";
 import prompedia from "./prompedia.png";
 import newzter from "./newzter.png";
 import codeblogix from "./codeblogix.png";
+import conferro from "./congerro.png";
+import cp_hope from "./cp_hope.png";
+import evently from "./evently.jpeg";
 
 export {
   logo,
@@ -74,5 +80,11 @@ export {
   alan,
   sql,
   graphql,
-  clerk
+  clerk,
+  socketio,
+  prisma,
+  project,
+  conferro,
+  evently,
+  cp_hope,
 };

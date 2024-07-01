@@ -25,6 +25,12 @@ import {
   newzter,
   aws,
   alan,
+  socketio,
+  graphql,
+  prisma,
+  evently,
+  conferro,
+  cp_hope,
 } from "../assets";
 
 export const navLinks = [
@@ -35,6 +41,10 @@ export const navLinks = [
   {
     id: "work",
     title: "Work",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -63,14 +73,6 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -89,10 +91,6 @@ const technologies = [
   {
     name: "MongoDB",
     icon: mongodb,
-  },
-  {
-    name: "Git",
-    icon: git,
   },
   {
     name: "AWS",
@@ -117,6 +115,18 @@ const technologies = [
   {
     name: "Alan AI",
     icon: alan,
+  },
+  {
+    name: "GraphQL",
+    icon: graphql,
+  },
+  {
+    name: "Prisma",
+    icon: prisma,
+  },
+  {
+    name: "Socket-io",
+    icon: socketio,
   },
 ];
 
@@ -143,7 +153,7 @@ const experiences = [
     points: [
       "Collaborated with cross-functional teams to implement Angular features, resulting in a 25% improvement in UI and reduced the bug count by 50%.",
       "Part of Functionality and bug-solving team and solved around 50bugs in duration of 2 months",
-      "Implementing responsive design and ensuring cross-browser compatibility."
+      "Implementing responsive design and ensuring cross-browser compatibility.",
     ],
   },
   {
@@ -154,14 +164,100 @@ const experiences = [
     date: "Mar 2022 - Nov 2022",
     points: [
       "Guided 100+ students in web development, providing hands-on assistance and conducting code reviews ; resulted in an average improvement of 30% in students’ coding skills and project completion rates",
-      "Achieved SLA of 92%, had the best doubt solving ratio and highest rated TA among all other TA’s"
+      "Achieved SLA of 92%, had the best doubt solving ratio and highest rated TA among all other TA’s",
     ],
-  }
+  },
 ];
 
-
-
 const projects = [
+  {
+    name: "CP-Hope",
+    description:
+      " Next.js app clone of 450DSA, integrating ShadcnUI, ALAN AI, Tanstack Tables,  voice-controlled navigation, customer support",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "alan-ai",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tanstack-library",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: cp_hope,
+    source_code_link: "https://github.com/MayankRajAnand/cp-hope",
+    project_link: "https://cp-hope.vercel.app/",
+  },
+  {
+    name: "Conferro",
+    description:
+      "Comprehensive video conferencing app  including meeting scheduling, screen sharing, real-time messaging, a and a user-friendly interface for seamless experiences",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stream-api",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind-css",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: conferro,
+    source_code_link: "https://github.com/MayankRajAnand/conferro",
+    project_link: "https://conferro.vercel.app/",
+  },
+  {
+    name: "Codeblogix",
+    description:
+      "A comprehensive blog app that allows users to read insighful blogs and discover related blogs as well as blogs from same writer",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "graphql",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "freen-text-gradient",
+      },
+    ],
+    image: codeblogix,
+    source_code_link: "https://github.com/MayankRajAnand/CodeBlogix",
+    project_link: "https://code-blogix.vercel.app/",
+  },
+  {
+    name: "Evently",
+    description:
+      "Event organization app with features such as advanced search and filter, event categorization, and sorting options. Integrated secure payment processing via Stripe,",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "green-text-gradient",
+      },
+      {
+        name: "zod",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: evently,
+    source_code_link: "https://github.com/MayankRajAnand/evently",
+    project_link: "https://evently-nine-tau.vercel.app/",
+  },
   {
     name: "Jenie",
     description:
@@ -182,6 +278,7 @@ const projects = [
     ],
     image: jenie,
     source_code_link: "https://github.com/MayankRajAnand/jenie",
+    project_link: "https://jenie.vercel.app/",
   },
   {
     name: "Prompedia",
@@ -203,28 +300,9 @@ const projects = [
     ],
     image: prompedia,
     source_code_link: "https://github.com/MayankRajAnand/prompedia",
+    project_link: "https://github.com/MayankRajAnand/prompedia",
   },
-  {
-    name: "Codeblogix",
-    description:
-      "A comprehensive blog app that allows users to read insighful blogs and discover related blogs as well as blogs from same writer",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "graphql",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: codeblogix,
-    source_code_link: "https://github.com/MayankRajAnand/CodeBlogix",
-  },
+
   {
     name: "Chatulita",
     description:
@@ -249,6 +327,7 @@ const projects = [
     ],
     image: chatulita,
     source_code_link: "https://github.com/MayankRajAnand/realtime-chat-app",
+    project_link: "https://chatulita.netlify.app/",
   },
   {
     name: "Newzter",
@@ -270,6 +349,7 @@ const projects = [
     ],
     image: newzter,
     source_code_link: "https://github.com/MayankRajAnand/NewsApi",
+    project_link: "https://github.com/MayankRajAnand/NewsApi",
   },
 ];
 
